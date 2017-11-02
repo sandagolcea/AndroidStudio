@@ -12,9 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Integer currentCount = 0;
 
     private Integer monsterType() {
-        // >= 20 blue monster android:src="@drawable/cookie"
-        // >= 10 cookie <= 20
-        // < 10 green monster
+        // we're changing the android:src="@drawable/<monster_type>"
         if (currentCount >= 20) {
             return R.drawable.blue_cookie_monster;
         } else if (currentCount >= 10) {
